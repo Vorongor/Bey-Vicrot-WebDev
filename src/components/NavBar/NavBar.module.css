@@ -1,0 +1,39 @@
+@import '../component.module.css';
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000d9;
+  padding: 0 12px;
+}
+.title {
+  color: #16ff00ad;
+}
+.list {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: #16ff00ad;
+}
+.link:hover {
+  text-shadow: #ffed00ad -2px 3px;
+}
+.btnGrup {
+  display: flex;
+  gap: 8px;
+}
+.btn {
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 20px;
+  border: 2px solid #ffed00ab;
+  background-color: #000000d9;
+  color: #ffed00ab;
+}
+.btn:hover {
+scale: 1.1;
+}

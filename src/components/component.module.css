@@ -1,0 +1,17 @@
+
+.btnGrup {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.btn {
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 20px;
+    border: 2px solid #ffed00ab;
+    background-color: #000000d9;
+    color: #ffed00ab;
+  }
