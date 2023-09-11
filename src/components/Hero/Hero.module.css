@@ -1,7 +1,21 @@
 .hero {
- 
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+.title {
+  color: #ffed00ab;
+  text-shadow: 2px 2px 4px #000000;
+}
+.text {
+  width: 75%;
+  color: #16ff00ab;
+  text-shadow: 2px 2px 4px #000000;
+}
 .img {
   width: 280px;
+  border-radius: 6px;
+  
 }

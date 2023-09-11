@@ -1,64 +1,163 @@
-import React from 'react';
-
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import Typography from '@mui/material/Typography';
+import CodeIcon from '@mui/icons-material/Code';
+import CssIcon from '@mui/icons-material/Css';
+import JavascriptIcon from '@mui/icons-material/Javascript';
+import DynamicFormIcon from '@mui/icons-material/DynamicForm';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
 const TechSkills = () => {
   return (
-    <div className="tech-skills">
-      <h3>Технічні навички</h3>
-      <div className="skill-card">
-        <h4>HTML</h4>
-        <p>
-          HTML (HyperText Markup Language) - це основна мова розмітки для
-          створення веб-сторінок. Вона використовується для структурування
-          контенту та визначення його семантики.
-        </p>
-      </div>
-      <div className="skill-card">
-        <h4>CSS</h4>
-        <p>
-          CSS (Cascading Style Sheets) - це мова для стилізації веб-сторінок.
-          Вона дозволяє керувати виглядом та макетом елементів на сторінці.
-        </p>
-      </div>
-      <div className="skill-card">
-        <h4>JavaScript</h4>
-        <p>
-          JavaScript - це мова програмування, яка використовується для створення
-          інтерактивних та динамічних веб-сторінок. Вона дозволяє додавати
-          функціональність до сторінок.
-        </p>
-      </div>
-      <div className="skill-card">
-        <h4>React</h4>
-        <p>
-          React - це бібліотека JavaScript для створення інтерфейсів
-          користувача. Вона дозволяє побудувати ефективні та перевірені
-          компоненти для веб-додатків.
-        </p>
-      </div>
-      <div className="skill-card">
-        <h4>Redux</h4>
-        <p>
-          Redux - це бібліотека для керування станом додатків у веб-розробці.
-          Вона допомагає зберігати та оновлювати стан додатку в одному
-          централізованому місці.
-        </p>
-      </div>
-      <div className="skill-card">
-        <h4>Node.js</h4>
-        <p>
-          Node.js - це середовище виконання JavaScript, яке дозволяє виконувати
-          код на стороні сервера. Воно широко використовується для створення
-          серверів та додатків.
-        </p>
-      </div>
-      <div className="skill-card">
-        <h4>Bootstrap та Material UI</h4>
-        <p>
-          Bootstrap і Material UI - це популярні бібліотеки інтерфейсу
-          користувача, які надають готові компоненти та стилі для швидкого
-          розроблення стильних веб-додатків.
-        </p>
-      </div>
+    <div id='TechSkills' style={{ padding: '12px' }}>
+      <Card sx={{ p: 2 }}>
+        <Typography variant="h3" textAlign={'center'}>
+          Технічні навички
+        </Typography>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            alignContent: 'center',
+            alignItems: 'center',
+            gap: '20px',
+          }}
+        >
+          <Card
+            color="primary"
+            orientation="horizontal"
+            size="sm"
+            variant="outlined"
+            sx={{
+              maxWidth: 280,
+              minHeight: 220,
+              padding: 2,
+            }}
+          >
+            <Typography textAlign={'center'} variant="h5">
+              HTML
+            </Typography>
+            <CodeIcon sx={{ fontSize: '4rem', paddingLeft: '35%' }} />
+            <Typography variant="body2" color="text.secondary">
+              HTML (HyperText Markup Language) - це основна мова розмітки для
+              створення веб-сторінок. Вона використовується для структурування
+              контенту та визначення його семантики.
+            </Typography>
+          </Card>
+          <Card
+            color="primary"
+            orientation="horizontal"
+            size="sm"
+            variant="outlined"
+            sx={{
+              maxWidth: 280,
+              minHeight: 220,
+              padding: 2,
+            }}
+          >
+            <Typography textAlign={'center'} variant="h5">
+              CSS
+            </Typography>
+            <CssIcon sx={{ fontSize: '4rem', paddingLeft: '35%' }} />
+            <Typography variant="body2" color="text.secondary">
+              CSS (Cascading Style Sheets) - це мова для стилізації
+              веб-сторінок. Вона дозволяє керувати виглядом та макетом елементів
+              на сторінці.
+            </Typography>
+          </Card>
+
+          <Card
+            color="primary"
+            orientation="horizontal"
+            size="sm"
+            variant="outlined"
+            sx={{
+              maxWidth: 280,
+              minHeight: 220,
+              padding: 2,
+            }}
+          >
+            <Typography textAlign={'center'} variant="h5">
+              JavaScript
+            </Typography>
+            <JavascriptIcon sx={{ fontSize: '4rem', paddingLeft: '35%' }} />
+            <Typography variant="body2" color="text.secondary">
+              JavaScript - це мова програмування, яка використовується для
+              створення інтерактивних та динамічних веб-сторінок. Вона дозволяє
+              додавати функціональність до сторінок.
+            </Typography>
+          </Card>
+
+          <Card
+            color="primary"
+            orientation="horizontal"
+            size="sm"
+            variant="outlined"
+            sx={{
+              maxWidth: 280,
+              minHeight: 220,
+              padding: 2,
+            }}
+          >
+            <Typography textAlign={'center'} variant="h5">
+              React
+            </Typography>
+            <DynamicFormIcon sx={{ fontSize: '4rem', paddingLeft: '35%' }} />
+            <Typography variant="body2" color="text.secondary">
+              React - це бібліотека JavaScript для створення інтерфейсів
+              користувача. Вона дозволяє побудувати ефективні та перевірені
+              компоненти для веб-додатків.
+            </Typography>
+          </Card>
+          <Card
+            color="primary"
+            orientation="horizontal"
+            size="sm"
+            variant="outlined"
+            sx={{
+              maxWidth: 280,
+              minHeight: 220,
+              padding: 2,
+            }}
+          >
+            <Typography textAlign={'center'} variant="h5">
+              Node.js
+            </Typography>
+            <TerminalIcon sx={{ fontSize: '4rem', paddingLeft: '35%' }} />
+            <Typography variant="body2" color="text.secondary">
+              Node.js - це середовище виконання JavaScript, яке дозволяє
+              виконувати код на стороні сервера. Воно широко використовується
+              для створення серверів та додатків.
+            </Typography>
+          </Card>
+          <Card
+            color="primary"
+            orientation="horizontal"
+            size="sm"
+            variant="outlined"
+            sx={{
+              maxWidth: 280,
+              minHeight: 220,
+              padding: 2,
+            }}
+          >
+            <Typography textAlign={'center'} variant="h5">
+              Bootstrap та Material UI
+            </Typography>
+            <IntegrationInstructionsIcon
+              sx={{ fontSize: '4rem', paddingLeft: '35%' }}
+            />
+            <Typography variant="body2" color="text.secondary">
+              Bootstrap і Material UI - це популярні бібліотеки інтерфейсу
+              користувача, які надають готові компоненти та стилі для швидкого
+              розроблення стильних веб-додатків.
+            </Typography>
+          </Card>
+        </Box>
+      </Card>
     </div>
   );
 };
