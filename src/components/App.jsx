@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Contacts from './Contats/Contacts';
 import Hero from './Hero/Hero';
 import NavigationMenu from './NavBar/NavBar';
@@ -17,7 +17,6 @@ export const App = () => {
         flexDirection: 'column',
         backgroundColor: '#dde6ed',
         overflow: 'scroll',
-
       }}
     >
       <NavigationMenu />

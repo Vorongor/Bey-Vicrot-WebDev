@@ -2,7 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
-import HtmlIcon from '@mui/icons-material/Html';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import EngineeringIcon from '@mui/icons-material/Engineering';

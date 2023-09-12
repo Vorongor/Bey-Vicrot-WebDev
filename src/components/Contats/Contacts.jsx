@@ -23,42 +23,6 @@ import style from './Conatcts.module.css';
 import FeedbackForm from 'components/FeedBackForm/FeedBackForm';
 
 const Contacts = () => {
-  const [clientName, setClienName] = React.useState('');
-  const [clientEmail, setClienEmail] = React.useState('');
-  const [clientFeedback, setClienFeedack] = React.useState('');
-
-  const apiToken = '6407481840:AAE5YyjD19wV9jzvgLOc-zo77PVYkPdkA_I';
-  const chatId = '644717925';
-
-  function sendTelegramMessage(message) {
-    const url = `https://api.telegram.org/bot${apiToken}/sendMessage`;
-    const data = {
-      chat_id: chatId,
-      text: message,
-    };
-
-    fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-      .then(response => response.json())
-      .then(data => console.log(data))
-      .catch(error => console.error(error));
-  }
- 
-  function handleSendMessage() {
-    const userMessage = {
-      name: clientName,
-      email: clientEmail,
-      feedback: clientFeedback,
-    };
-    sendTelegramMessage(userMessage);
-    console.log(userMessage)
-  }
-
   return (
     <div id="Contacts" className={style.box}>
       {/* Блок соціальних мереж */}
@@ -147,38 +111,6 @@ const Contacts = () => {
       </div>
       {/* Блок форми для фідбеку */}
       <FeedbackForm />
-      {/* <div className="feedback-form">
-        <h3>Leave your FeedBack</h3>
-        <List style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-          <FormControl>
-            <FormLabel>Name:</FormLabel>
-            <Input
-              onChange={handleNameChange}
-              placeholder="Your name, pleace"
-            />
-            <FormHelperText>It will be greate to know your name</FormHelperText>
-          </FormControl>
-          <FormControl>
-            <FormLabel>Email:</FormLabel>
-            <Input
-              onChange={handleEmailChange}
-              placeholder="Your email, pleace"
-            />
-            <FormHelperText>It will help me to finde you</FormHelperText>
-          </FormControl>
-          <FormControl>
-            <FormLabel>Feedback:</FormLabel>
-            <Input
-              onChange={handleFeedbackChange}
-              placeholder="Let me take your order..."
-            />
-            <FormHelperText>Thank you for your feedback</FormHelperText>
-          </FormControl>
-          <Button type="submit" onSubmit={handleSendMessage}>
-            Надіслати
-          </Button>
-        </List>
-      </div> */}
     </div>
   );
 };
