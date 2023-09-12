@@ -11,8 +11,8 @@ import GroupsIcon from '@mui/icons-material/Groups';
 
 const SoftSkills = () => {
   return (
-    <div id='SoftSkills' style={{ padding: '12px' }}>
-      <Card sx={{ p: 2 }}>
+    <div id="SoftSkills" style={{ padding: '12px' }}>
+      <Card sx={{ p: 2, backgroundColor: '#9db2bf' }}>
         <Typography variant="h3" textAlign={'center'}>
           Соціальні та міжособистісні навички
         </Typography>
@@ -41,7 +41,9 @@ const SoftSkills = () => {
             <Typography textAlign={'center'} variant="h5">
               Стресостійкість
             </Typography>
-            <AdminPanelSettingsIcon sx={{ fontSize: '4rem', paddingLeft: '35%' }} />
+            <AdminPanelSettingsIcon
+              sx={{ fontSize: '4rem', paddingLeft: '35%' }}
+            />
             <Typography variant="body2" color="text.secondary">
               Стресостійкість - це важлива якість, яка допомагає зберігати
               спокій та приймати обдумані рішення в найважчі моменти. Ця навичка

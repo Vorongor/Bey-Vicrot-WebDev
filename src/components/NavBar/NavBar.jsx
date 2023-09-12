@@ -46,7 +46,7 @@ const NavigationMenu = () => {
   return (
     <div id='Header'>
       <AppBar position="static" >
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" sx={{ backgroundColor: '#27374b'}}>
           <Toolbar disableGutters>
             <GitHubIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
             <Typography

@@ -20,10 +20,47 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TextField from '@mui/material/TextField';
 import style from './Conatcts.module.css';
+import FeedbackForm from 'components/FeedBackForm/FeedBackForm';
 
 const Contacts = () => {
+  const [clientName, setClienName] = React.useState('');
+  const [clientEmail, setClienEmail] = React.useState('');
+  const [clientFeedback, setClienFeedack] = React.useState('');
+
+  const apiToken = '6407481840:AAE5YyjD19wV9jzvgLOc-zo77PVYkPdkA_I';
+  const chatId = '644717925';
+
+  function sendTelegramMessage(message) {
+    const url = `https://api.telegram.org/bot${apiToken}/sendMessage`;
+    const data = {
+      chat_id: chatId,
+      text: message,
+    };
+
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error(error));
+  }
+ 
+  function handleSendMessage() {
+    const userMessage = {
+      name: clientName,
+      email: clientEmail,
+      feedback: clientFeedback,
+    };
+    sendTelegramMessage(userMessage);
+    console.log(userMessage)
+  }
+
   return (
-    <div id='Contacts' className={style.box}>
+    <div id="Contacts" className={style.box}>
       {/* Блок соціальних мереж */}
       <div className="social-media">
         <Grid item xs={12} md={6}>
@@ -36,13 +73,22 @@ const Contacts = () => {
               <ListItemIcon>
                 <CallIcon />
               </ListItemIcon>
-              <strong>Номер телефону:</strong> +1234567890
+              <strong>Номер телефону: </strong>
+              <a style={{ textDecoration: 'none' }} href="tel:+380636824667">
+                +38(063)-68-24-667
+              </a>
             </ListItem>
             <ListItem>
               <ListItemIcon>
                 <AlternateEmailIcon />
               </ListItemIcon>
-              <strong>Email:</strong> example@gmail.com
+              <strong>Email: </strong>{' '}
+              <a
+                style={{ textDecoration: 'none' }}
+                href="mailto:mr.maddarknes@gmail.com"
+              >
+                mr.maddarknes@gmail.com
+              </a>
             </ListItem>
             <ListItem>
               <ListItemIcon>
@@ -100,27 +146,39 @@ const Contacts = () => {
         </Grid>
       </div>
       {/* Блок форми для фідбеку */}
-      <div className="feedback-form">
+      <FeedbackForm />
+      {/* <div className="feedback-form">
         <h3>Leave your FeedBack</h3>
         <List style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <FormControl>
             <FormLabel>Name:</FormLabel>
-            <Input placeholder="Your name, pleace" />
+            <Input
+              onChange={handleNameChange}
+              placeholder="Your name, pleace"
+            />
             <FormHelperText>It will be greate to know your name</FormHelperText>
           </FormControl>
           <FormControl>
             <FormLabel>Email:</FormLabel>
-            <Input placeholder="Your email, pleace" />
+            <Input
+              onChange={handleEmailChange}
+              placeholder="Your email, pleace"
+            />
             <FormHelperText>It will help me to finde you</FormHelperText>
           </FormControl>
           <FormControl>
             <FormLabel>Feedback:</FormLabel>
-            <Input placeholder="Let me take your order..." />
+            <Input
+              onChange={handleFeedbackChange}
+              placeholder="Let me take your order..."
+            />
             <FormHelperText>Thank you for your feedback</FormHelperText>
           </FormControl>
-          <Button type="submit">Надіслати</Button>
+          <Button type="submit" onSubmit={handleSendMessage}>
+            Надіслати
+          </Button>
         </List>
-      </div>
+      </div> */}
     </div>
   );
 };

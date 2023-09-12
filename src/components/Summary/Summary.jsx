@@ -5,19 +5,18 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Divider } from '@mui/material';
 
 const Summary = () => {
   return (
-    <div id='Summary' style={{ padding: '12px' }}>
-      <Card>
-        <CardContent>
+    <div id="Summary" style={{ padding: '12px' }}>
+      <Card style={{ backgroundColor: '#9db2bf' }}>
+        <CardContent
+          sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}
+        >
           <Box>
-            <Typography
-              variant="h5"
-              component="div"
-              style={{ display: 'flex', justifyContent: 'flex-end' }}
-            >
-              Про мене
+            <Typography variant="h5" component="div">
+              <Divider orientation="horizontal">Про мене</Divider>
             </Typography>
             <Typography
               variant="body2"
@@ -31,7 +30,7 @@ const Summary = () => {
           </Box>
           <Box>
             <Typography variant="h5" component="div">
-              Освіта
+              <Divider orientation="horizontal">Освіта</Divider>
             </Typography>
             <Typography variant="body2">
               - 2017: Закінчив школу.
@@ -42,12 +41,8 @@ const Summary = () => {
             </Typography>
           </Box>
           <Box>
-            <Typography
-              variant="h5"
-              component="div"
-              style={{ display: 'flex', justifyContent: 'flex-end' }}
-            >
-              Робота
+            <Typography variant="h5" component="div">
+              <Divider orientation="horizontal">Робота</Divider>
             </Typography>
             <Typography
               variant="body2"

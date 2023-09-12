@@ -15,7 +15,7 @@ export const App = () => {
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: 'grey',
+        backgroundColor: '#dde6ed',
         overflow: 'scroll',
 
       }}

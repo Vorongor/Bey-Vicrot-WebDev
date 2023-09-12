@@ -3,15 +3,15 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import CodeIcon from '@mui/icons-material/Code';
-import CssIcon from '@mui/icons-material/Css';
-import JavascriptIcon from '@mui/icons-material/Javascript';
+import LineStyleIcon from '@mui/icons-material/LineStyle';
+import DataThresholdingIcon from '@mui/icons-material/DataThresholding';
 import DynamicFormIcon from '@mui/icons-material/DynamicForm';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
 const TechSkills = () => {
   return (
-    <div id='TechSkills' style={{ padding: '12px' }}>
-      <Card sx={{ p: 2 }}>
+    <div id="TechSkills" style={{ padding: '12px' }}>
+      <Card sx={{ p: 2, backgroundColor: '#9db2bf' }}>
         <Typography variant="h3" textAlign={'center'}>
           Технічні навички
         </Typography>
@@ -61,7 +61,7 @@ const TechSkills = () => {
             <Typography textAlign={'center'} variant="h5">
               CSS
             </Typography>
-            <CssIcon sx={{ fontSize: '4rem', paddingLeft: '35%' }} />
+            <LineStyleIcon sx={{ fontSize: '4rem', paddingLeft: '35%' }} />
             <Typography variant="body2" color="text.secondary">
               CSS (Cascading Style Sheets) - це мова для стилізації
               веб-сторінок. Вона дозволяє керувати виглядом та макетом елементів
@@ -83,7 +83,7 @@ const TechSkills = () => {
             <Typography textAlign={'center'} variant="h5">
               JavaScript
             </Typography>
-            <JavascriptIcon sx={{ fontSize: '4rem', paddingLeft: '35%' }} />
+            <DataThresholdingIcon sx={{ fontSize: '4rem', paddingLeft: '35%' }} />
             <Typography variant="body2" color="text.secondary">
               JavaScript - це мова програмування, яка використовується для
               створення інтерактивних та динамічних веб-сторінок. Вона дозволяє

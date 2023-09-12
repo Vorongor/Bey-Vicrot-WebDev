@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 const Hero = () => {
-  const imgUrl = require('../../img/profil.jpg');
+  const imgUrl = require('../../img/profilstrickt.jpg');
   return (
     <div id="Hero" style={{ padding: '12px' }}>
       <Card
@@ -15,6 +15,7 @@ const Hero = () => {
           flexDirection: 'row',
           padding: '12px',
           gap: '20px',
+          backgroundColor: '#9db2bf',
         }}
       >
         <Box
