@@ -1,5 +1,12 @@
 import * as React from 'react';
-import { Grid, List, ListItem, ListItemIcon, Typography } from '@mui/material';
+import {
+  Card,
+  Grid,
+  List,
+  ListItem,
+  ListItemIcon,
+  Typography,
+} from '@mui/material';
 import CallIcon from '@mui/icons-material/Call';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -13,91 +20,94 @@ const Contacts = () => {
   return (
     <div id="Contacts" className={style.box}>
       {/* Блок соціальних мереж */}
-      <div className="social-media">
+      <Card
+        sx={{
+          width: 300,
+          height: 336,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#454545',
+        }}
+      >
         <Grid item xs={12} md={6}>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
+          <Typography
+            sx={{
+              mt: 4,
+              mb: 2,
+              backgroundColor: '#ff6000',
+              textAlign: 'center',
+            }}
+            variant="h6"
+            component="div"
+          >
             Contact me on social media
           </Typography>
-
           <List>
-            <ListItem>
+            <ListItem component={'a'} href="tel:+380636824667">
               <ListItemIcon>
-                <CallIcon />
+                <CallIcon sx={{ color: '#ff6000' }} />
               </ListItemIcon>
-              <strong>Номер телефону: </strong>
-              <a style={{ textDecoration: 'none' }} href="tel:+380636824667">
-                +38(063)-68-24-667
-              </a>
+              +38(063)-68-24-667
             </ListItem>
-            <ListItem>
+            <ListItem component={'a'} href="mailto:mr.maddarknes@gmail.com">
               <ListItemIcon>
-                <AlternateEmailIcon />
+                <AlternateEmailIcon sx={{ color: '#ff6000' }} />
               </ListItemIcon>
-              <strong>Email: </strong>{' '}
-              <a
-                style={{ textDecoration: 'none' }}
-                href="mailto:mr.maddarknes@gmail.com"
-              >
-                mr.maddarknes@gmail.com
-              </a>
+              mr.maddarknes@gmail.com
             </ListItem>
-            <ListItem>
+            <ListItem
+              component={'a'}
+              href="https://www.instagram.com/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ListItemIcon>
-                <InstagramIcon />
+                <InstagramIcon sx={{ color: '#ff6000' }} />
               </ListItemIcon>
-              <strong>Instagram:</strong>
-              <a
-                href="https://www.instagram.com/example"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                @example
-              </a>
+              @example
             </ListItem>
-            <ListItem>
+            <ListItem
+              component={'a'}
+              href="https://t.me/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ListItemIcon>
-                <TelegramIcon />
+                <TelegramIcon sx={{ color: '#ff6000' }} />
               </ListItemIcon>
-              <strong>Telegram:</strong>
-              <a
-                href="https://t.me/example"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                @example
-              </a>
+              @example
             </ListItem>
-            <ListItem>
+            <ListItem
+              component={'a'}
+              href="https://www.facebook.com/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ListItemIcon>
-                <FacebookIcon />
+                <FacebookIcon sx={{ color: '#ff6000' }} />
               </ListItemIcon>
-              <strong>Facebook:</strong>
-              <a
-                href="https://www.facebook.com/example"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Example Facebook
-              </a>
+              Example Facebook
             </ListItem>
-            <ListItem>
+            <ListItem
+              component={'a'}
+              href="https://www.linkedin.com/in/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ListItemIcon>
-                <LinkedInIcon />
+                <LinkedInIcon sx={{ color: '#ff6000' }} />
               </ListItemIcon>
-              <strong>LinkedIn:</strong>
-              <a
-                href="https://www.linkedin.com/in/example"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Example LinkedIn
-              </a>
+              Example LinkedIn
             </ListItem>
           </List>
         </Grid>
-      </div>
+      </Card>
       {/* Блок форми для фідбеку */}
-      <FeedbackForm />
+      <Card sx={{ width: 300 }}>
+        <FeedbackForm />
+      </Card>
     </div>
   );
 };

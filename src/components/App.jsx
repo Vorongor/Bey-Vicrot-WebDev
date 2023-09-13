@@ -6,7 +6,7 @@ import Projects from './Projects/Projects';
 import SoftSkills from './SoftSkills/Softskills';
 import Summary from './Summary/Summary';
 import TechSkills from './TechSkills/Techskills';
-import style from './component.module.css';
+// import style from './component.module.css';
 
 export const App = () => {
   return (
@@ -15,7 +15,7 @@ export const App = () => {
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: '#dde6ed',
+        backgroundColor: '#fff',
         overflow: 'scroll',
       }}
     >
@@ -26,7 +26,7 @@ export const App = () => {
       <SoftSkills />
       <Projects />
       <Contacts />
-      <div className={style.btnGrup}>
+      {/* <div className={style.btnGrup}>
         {
           <button className={style.btn}>
             <a href="#Header" className={style.link}>
@@ -41,7 +41,7 @@ export const App = () => {
             </a>
           </button>
         }
-      </div>
+      </div> */}
     </div>
   );
 };

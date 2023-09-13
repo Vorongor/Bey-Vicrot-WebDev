@@ -46,7 +46,7 @@ const NavigationMenu = () => {
   return (
     <div id='Header'>
       <AppBar position="static" >
-        <Container maxWidth="xl" sx={{ backgroundColor: '#27374b'}}>
+        <Container maxWidth="xl" sx={{ backgroundColor: '#454545', color: '#ff6000'}}>
           <Toolbar disableGutters>
             <GitHubIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
             <Typography
@@ -103,7 +103,7 @@ const NavigationMenu = () => {
                     href={`#${page}`}
                     onClick={handleCloseNavMenu}
                   >
-                    <Typography textAlign="center">{page}</Typography>
+                    <Typography textAlign="center" sx={{ color: '#ff6000'}}>{page}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -134,7 +134,7 @@ const NavigationMenu = () => {
                   component="a"
                   href={`#${page}`}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
+                  sx={{ my: 2, color: '#ff6000', display: 'block' }}
                 >
                   {page}
                 </Button>

@@ -11,7 +11,7 @@ import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstruct
 const TechSkills = () => {
   return (
     <div id="TechSkills" style={{ padding: '12px' }}>
-      <Card sx={{ p: 2, backgroundColor: '#9db2bf' }}>
+      <Card sx={{ p: 2, backgroundColor: '#454545' }}>
         <Typography variant="h3" textAlign={'center'}>
           Технічні навички
         </Typography>

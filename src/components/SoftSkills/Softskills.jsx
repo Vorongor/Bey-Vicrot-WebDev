@@ -11,7 +11,7 @@ import GroupsIcon from '@mui/icons-material/Groups';
 const SoftSkills = () => {
   return (
     <div id="SoftSkills" style={{ padding: '12px' }}>
-      <Card sx={{ p: 2, backgroundColor: '#9db2bf' }}>
+      <Card sx={{ p: 2, backgroundColor: '#454545' }}>
         <Typography variant="h3" textAlign={'center'}>
           Соціальні та міжособистісні навички
         </Typography>

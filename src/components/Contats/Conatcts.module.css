@@ -1,7 +1,12 @@
 .box {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   background-color: transparent;
+}
+a,
+li {
+  color: #ff6000;
 }

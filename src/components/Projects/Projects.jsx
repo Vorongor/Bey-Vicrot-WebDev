@@ -68,7 +68,7 @@ const Projects = () => {
           alignItems: 'center',
           gap: '20px',
           padding: '12px',
-          backgroundColor: '#9db2bf',
+          backgroundColor: '#454545',
         }}
       >
         <Typography variant="h4">Мої проекти</Typography>

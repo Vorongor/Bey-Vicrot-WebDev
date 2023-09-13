@@ -8,7 +8,7 @@ import { Divider } from '@mui/material';
 const Summary = () => {
   return (
     <div id="Summary" style={{ padding: '12px' }}>
-      <Card style={{ backgroundColor: '#9db2bf' }}>
+      <Card style={{ backgroundColor: '#454545' }}>
         <CardContent
           sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}
         >

@@ -1,4 +1,6 @@
+import { Button, Card,  Input, Typography } from '@mui/material';
 import React, { useState } from 'react';
+import style from './WriteMachin.module.css';
 
 const FeedbackForm = () => {
   const [name, setName] = useState('');
@@ -29,7 +31,6 @@ const FeedbackForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // Отримайте дані з полів name, email та message і відправте їх на сервер або на Telegram бота.
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Message:', message);
@@ -40,48 +41,103 @@ const FeedbackForm = () => {
     };
     sendTelegramMessage(userMessage);
     console.log(userMessage);
-    // Скиньте дані після відправки форми
     setName('');
     setEmail('');
     setMessage('');
   };
 
   return (
-    <div>
-      <h2>Залиште свій відгук</h2>
-      <form onSubmit={handleSubmit}>
+    <Card
+      sx={{
+        width: 300,
+        height: 336,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#454545',
+      }}
+    >
+      <Typography
+        sx={{
+          mt: 4,
+          mb: 2,
+          width: 286,
+          backgroundColor: '#ff6000',
+          textAlign: 'center',
+        }}
+        variant="h6"
+        component="div"
+      >
+        Залиште свій відгук
+      </Typography>
+      <form
+        style={{
+          height: '80%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}
+        onSubmit={handleSubmit}
+      >
         <div>
-          <label htmlFor="name">Ім'я:</label>
-          <input
+          <Input
+            color="warning"
+            size="lg"
+            variant="solid"
             type="text"
             id="name"
             value={name}
             onChange={e => setName(e.target.value)}
             required
+            placeholder="Name"
           />
         </div>
         <div>
-          <label htmlFor="email">Email:</label>
-          <input
+          <Input
+            color="warning"
+            size="lg"
+            variant="outlined"
             type="email"
             id="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
             required
+            placeholder="Email"
           />
         </div>
-        <div>
-          <label htmlFor="message">Повідомлення:</label>
+        <div  className={style.box}>
           <textarea
             id="message"
             value={message}
             onChange={e => setMessage(e.target.value)}
             required
+            style={{
+              resize: 'none',
+              width: '286px',
+              height: '64px',
+              backgroundColor: '#454545',
+              border: '1px solid black',
+            }}
+            className={style.inputWrapper}
+            placeholder="For your Feedback..."
           />
+          
+          
         </div>
-        <button type="submit">Відправити</button>
+        <Button
+          color="warning"
+          disabled={false}
+          size="lg"
+          variant="soft"
+          type="submit"
+          backgroundColor='#ff6000'
+        >
+          Відправити
+        </Button>{' '}
       </form>
-    </div>
+    </Card>
   );
 };
 
