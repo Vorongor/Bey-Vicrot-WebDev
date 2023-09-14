@@ -47,59 +47,59 @@ const Contacts = () => {
           <List>
             <ListItem component={'a'} href="tel:+380636824667">
               <ListItemIcon>
-                <CallIcon sx={{ color: 'var(--accent-color)' }} />
+                <CallIcon sx={{ color: 'var(--primary-color)' }} />
               </ListItemIcon>
               +38(063)-68-24-667
             </ListItem>
             <ListItem component={'a'} href="mailto:mr.maddarknes@gmail.com">
               <ListItemIcon>
-                <AlternateEmailIcon sx={{ color: 'var(--accent-color)' }} />
+                <AlternateEmailIcon sx={{ color: 'var(--primary-color)' }} />
               </ListItemIcon>
               mr.maddarknes@gmail.com
             </ListItem>
             <ListItem
               component={'a'}
-              href="https://www.instagram.com/example"
+              href="https://www.instagram.com/un.known_oficer/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <ListItemIcon>
-                <InstagramIcon sx={{ color: 'var(--accent-color)' }} />
+                <InstagramIcon sx={{ color: 'var(--primary-color)' }} />
               </ListItemIcon>
-              @example
+              @un.known_oficer
             </ListItem>
             <ListItem
               component={'a'}
-              href="https://t.me/example"
+              href="https://t.me/Vorongor9"
               target="_blank"
               rel="noopener noreferrer"
             >
               <ListItemIcon>
-                <TelegramIcon sx={{ color: 'var(--accent-color)' }} />
+                <TelegramIcon sx={{ color: 'var(--primary-color)' }} />
               </ListItemIcon>
-              @example
+              @Vorongor
             </ListItem>
             <ListItem
               component={'a'}
-              href="https://www.facebook.com/example"
+              href="https://www.facebook.com/profile.php?id=100012828817503"
               target="_blank"
               rel="noopener noreferrer"
             >
               <ListItemIcon>
-                <FacebookIcon sx={{ color: 'var(--accent-color)' }} />
+                <FacebookIcon sx={{ color: 'var(--primary-color)' }} />
               </ListItemIcon>
-              Example Facebook
+              Віктор Бей
             </ListItem>
             <ListItem
               component={'a'}
-              href="https://www.linkedin.com/in/example"
+              href="https://www.linkedin.com/in/%D0%B2%D1%96%D0%BA%D1%82%D0%BE%D1%80-%D0%B1%D0%B5%D0%B9-57859526b/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <ListItemIcon>
-                <LinkedInIcon sx={{ color: 'var(--accent-color)' }} />
+                <LinkedInIcon sx={{ color: 'var(--primary-color)' }} />
               </ListItemIcon>
-              Example LinkedIn
+              Victor (Vorongor) Bey
             </ListItem>
           </List>
         </Grid>

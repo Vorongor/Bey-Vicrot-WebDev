@@ -8,5 +8,5 @@
 }
 a,
 li {
-  color: #ff6000;
+  color: var(--primary-color);
 }
