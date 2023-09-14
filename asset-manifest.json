@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Bey-Vicrot-WebDev/static/css/main.135c1bd7.css",
-    "main.js": "/Bey-Vicrot-WebDev/static/js/main.d18440c6.js",
+    "main.css": "/Bey-Vicrot-WebDev/static/css/main.0f22fd1a.css",
+    "main.js": "/Bey-Vicrot-WebDev/static/js/main.a01acdd4.js",
     "static/media/profilstrickt.jpg": "/Bey-Vicrot-WebDev/static/media/profilstrickt.fa984e3a1b505ccf33ba.jpg",
     "static/media/avatar.jpg": "/Bey-Vicrot-WebDev/static/media/avatar.349ad41439cc50d2266c.jpg",
     "static/media/Chokoshop.jpg": "/Bey-Vicrot-WebDev/static/media/Chokoshop.34768124029e0b3af82e.jpg",
@@ -10,11 +10,11 @@
     "static/media/Portfolio.jpg": "/Bey-Vicrot-WebDev/static/media/Portfolio.77ed4b56783c1df063b0.jpg",
     "static/media/Phonebook.jpg": "/Bey-Vicrot-WebDev/static/media/Phonebook.c5b54728fc8255496488.jpg",
     "index.html": "/Bey-Vicrot-WebDev/index.html",
-    "main.135c1bd7.css.map": "/Bey-Vicrot-WebDev/static/css/main.135c1bd7.css.map",
-    "main.d18440c6.js.map": "/Bey-Vicrot-WebDev/static/js/main.d18440c6.js.map"
+    "main.0f22fd1a.css.map": "/Bey-Vicrot-WebDev/static/css/main.0f22fd1a.css.map",
+    "main.a01acdd4.js.map": "/Bey-Vicrot-WebDev/static/js/main.a01acdd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.135c1bd7.css",
-    "static/js/main.d18440c6.js"
+    "static/css/main.0f22fd1a.css",
+    "static/js/main.a01acdd4.js"
   ]
 }
