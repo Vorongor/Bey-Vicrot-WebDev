@@ -4,11 +4,11 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Divider } from '@mui/material';
-
+import '../component.module.css';
 const Summary = () => {
   return (
     <div id="Summary" style={{ padding: '12px' }}>
-      <Card style={{ backgroundColor: '#454545' }}>
+      <Card style={{ backgroundColor: 'var(--secondary-color)' }}>
         <CardContent
           sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}
         >

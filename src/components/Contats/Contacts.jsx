@@ -15,7 +15,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import style from './Conatcts.module.css';
 import FeedbackForm from 'components/FeedBackForm/FeedBackForm';
-
+import '../component.module.css';
 const Contacts = () => {
   return (
     <div id="Contacts" className={style.box}>
@@ -28,7 +28,7 @@ const Contacts = () => {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          backgroundColor: '#454545',
+          backgroundColor: 'var(--secondary-color)',
         }}
       >
         <Grid item xs={12} md={6}>
@@ -36,7 +36,7 @@ const Contacts = () => {
             sx={{
               mt: 4,
               mb: 2,
-              backgroundColor: '#ff6000',
+              backgroundColor: 'var(--accent-color)',
               textAlign: 'center',
             }}
             variant="h6"
@@ -47,13 +47,13 @@ const Contacts = () => {
           <List>
             <ListItem component={'a'} href="tel:+380636824667">
               <ListItemIcon>
-                <CallIcon sx={{ color: '#ff6000' }} />
+                <CallIcon sx={{ color: 'var(--accent-color)' }} />
               </ListItemIcon>
               +38(063)-68-24-667
             </ListItem>
             <ListItem component={'a'} href="mailto:mr.maddarknes@gmail.com">
               <ListItemIcon>
-                <AlternateEmailIcon sx={{ color: '#ff6000' }} />
+                <AlternateEmailIcon sx={{ color: 'var(--accent-color)' }} />
               </ListItemIcon>
               mr.maddarknes@gmail.com
             </ListItem>
@@ -64,7 +64,7 @@ const Contacts = () => {
               rel="noopener noreferrer"
             >
               <ListItemIcon>
-                <InstagramIcon sx={{ color: '#ff6000' }} />
+                <InstagramIcon sx={{ color: 'var(--accent-color)' }} />
               </ListItemIcon>
               @example
             </ListItem>
@@ -75,7 +75,7 @@ const Contacts = () => {
               rel="noopener noreferrer"
             >
               <ListItemIcon>
-                <TelegramIcon sx={{ color: '#ff6000' }} />
+                <TelegramIcon sx={{ color: 'var(--accent-color)' }} />
               </ListItemIcon>
               @example
             </ListItem>
@@ -86,7 +86,7 @@ const Contacts = () => {
               rel="noopener noreferrer"
             >
               <ListItemIcon>
-                <FacebookIcon sx={{ color: '#ff6000' }} />
+                <FacebookIcon sx={{ color: 'var(--accent-color)' }} />
               </ListItemIcon>
               Example Facebook
             </ListItem>
@@ -97,7 +97,7 @@ const Contacts = () => {
               rel="noopener noreferrer"
             >
               <ListItemIcon>
-                <LinkedInIcon sx={{ color: '#ff6000' }} />
+                <LinkedInIcon sx={{ color: 'var(--accent-color)' }} />
               </ListItemIcon>
               Example LinkedIn
             </ListItem>

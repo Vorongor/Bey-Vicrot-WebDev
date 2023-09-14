@@ -8,6 +8,7 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import style from './Projects.module.css';
+import '../component.module.css';
 
 const Projects = () => {
   const portfolioUrl = require('../../img/Portfolio.jpg');
@@ -68,7 +69,7 @@ const Projects = () => {
           alignItems: 'center',
           gap: '20px',
           padding: '12px',
-          backgroundColor: '#454545',
+          backgroundColor: 'var(--secondary-color)',
         }}
       >
         <Typography variant="h4">Мої проекти</Typography>
@@ -87,7 +88,13 @@ const Projects = () => {
             <div className={style.card} key={index}>
               <div className={style.cardInner}>
                 <div className={style.cardFont}>
-                  <Card>
+                  <Card
+                    sx={{
+                      p: 1,
+                      backgroundColor: 'var(--transparent-accent-color)',
+                      color: 'var(--primary-color)',
+                    }}
+                  >
                     <img
                       style={{
                         width: '300px',
@@ -114,7 +121,7 @@ const Projects = () => {
                     style={{
                       display: 'inline-block',
                       padding: '12px',
-                      backgroundColor: '#526d82',
+                      backgroundColor: 'var(--primary-color)',
                       color: 'white',
                       width: '300px',
                       height: '300px',

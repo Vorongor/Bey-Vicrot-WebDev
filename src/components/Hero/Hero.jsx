@@ -7,6 +7,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import OnlinePredictionIcon from '@mui/icons-material/OnlinePrediction';
 import ReplyIcon from '@mui/icons-material/Reply';
 import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
+import '../component.module.css'
 
 const Hero = () => {
   const imgUrl = require('../../img/profilstrickt.jpg');
@@ -22,7 +23,7 @@ const Hero = () => {
           alignItems: 'center',
           padding: '12px',
           gap: '12px',
-          backgroundColor: '#454545',
+          backgroundColor: `var(--secondary-color)`,
         }}
       >
         <Card

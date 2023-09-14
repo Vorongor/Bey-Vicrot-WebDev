@@ -1,7 +1,7 @@
-import { Button, Card,  Input, Typography } from '@mui/material';
+import { Button, Card, Input, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import style from './WriteMachin.module.css';
-
+import '../component.module.css';
 const FeedbackForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -55,7 +55,7 @@ const FeedbackForm = () => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#454545',
+        backgroundColor: 'var(--secondary-color)',
       }}
     >
       <Typography
@@ -63,7 +63,7 @@ const FeedbackForm = () => {
           mt: 4,
           mb: 2,
           width: 286,
-          backgroundColor: '#ff6000',
+          backgroundColor: 'var(--accent-color)',
           textAlign: 'center',
         }}
         variant="h6"
@@ -107,7 +107,7 @@ const FeedbackForm = () => {
             placeholder="Email"
           />
         </div>
-        <div  className={style.box}>
+        <div className={style.box}>
           <textarea
             id="message"
             value={message}
@@ -117,14 +117,12 @@ const FeedbackForm = () => {
               resize: 'none',
               width: '286px',
               height: '64px',
-              backgroundColor: '#454545',
+              backgroundColor: 'var(--secondary-color)',
               border: '1px solid black',
             }}
             className={style.inputWrapper}
             placeholder="For your Feedback..."
           />
-          
-          
         </div>
         <Button
           color="warning"
@@ -132,10 +130,10 @@ const FeedbackForm = () => {
           size="lg"
           variant="soft"
           type="submit"
-          backgroundColor='#ff6000'
+          backgroundColor="var(--accent-color)"
         >
           Відправити
-        </Button>{' '}
+        </Button>
       </form>
     </Card>
   );
